@@ -36,5 +36,5 @@ def play(songs)
       output = "Invalid input, please try again"
     end
   }
-  output
+  return output
 end
