@@ -26,5 +26,5 @@ def list(songs)
 end
 
 def play(songs)
-  puts ""
+  puts "Playing #{}"
 end
