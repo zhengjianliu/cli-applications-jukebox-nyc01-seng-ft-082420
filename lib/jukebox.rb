@@ -20,15 +20,15 @@ def help
 end
 
 def list(songs)
-  songs.each_with_index do |item, index|
-  puts "#{index+1}. #{item}"
-  end
+  songs.each_with_index { |song, index|
+  puts "#{index+1}. #{song}"
+  }
 end
 
 def play(songs)
   puts "Please enter a song name or number:"
   inpupt = gets.strip
-  songs.each { |song|
+  songs.each_with_index { |song,index|
     if input == song
       puts "Playing #{song}"
     else
