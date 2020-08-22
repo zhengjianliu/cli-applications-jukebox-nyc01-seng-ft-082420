@@ -32,6 +32,7 @@ def play(songs)
   songs.each_with_index { |song, index|
     if input == index.to_s || input == song
       output = "Playing #{song}"
+      break
     else
       output = "Invalid input, please try again"
     end
