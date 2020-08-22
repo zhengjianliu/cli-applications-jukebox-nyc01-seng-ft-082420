@@ -40,3 +40,7 @@ def play(songs)
   }
   puts output
 end
+
+def exit_jukebox
+  puts ""
+end
