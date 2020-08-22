@@ -31,7 +31,7 @@ def play(songs)
   input = gets.strip
   songs.each_with_index { |song, index|
   #binding.pry
-    if input == index.to_s || input == song
+    if input == (index+1).to_s || input == song
       output = "Playing #{song}"
       break
     else
