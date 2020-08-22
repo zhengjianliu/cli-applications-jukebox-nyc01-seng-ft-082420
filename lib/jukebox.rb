@@ -50,7 +50,7 @@ def run
   input = gets.strip
   if input == "help"
     help
-  elsif input == "play"
+  elsif input == "list"
     play
   end
   
