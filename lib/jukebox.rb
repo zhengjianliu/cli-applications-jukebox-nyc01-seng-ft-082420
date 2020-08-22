@@ -32,7 +32,7 @@ def play(songs)
     if input == song
       puts "Playing #{song}"
     else
-      puts ""
+      puts "Invalid input, please try again"
     end
   }
 end
