@@ -27,6 +27,12 @@ end
 
 def play(songs)
   puts "Please enter a song name or number:"
-  inpupt = gets.chomp
-  
+  inpupt = gets.strip
+  songs.each { |song|
+    if input == song
+      puts "Playing #{song}"
+    else
+      puts ""
+    end
+  }
 end
