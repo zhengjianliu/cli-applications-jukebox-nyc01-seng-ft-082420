@@ -26,13 +26,14 @@ def list(songs)
 end
 
 def play(songs)
+  output = ""
   puts "Please enter a song name or number:"
   inpupt = gets.strip
   songs.each_with_index { |song, index|
     if input == index || input == song
-      puts "Playing #{song}"
+      output = "Playing #{song}"
     else
-      puts "Invalid input, please try again"
+      output = "Invalid input, please try again"
     end
   }
 end
