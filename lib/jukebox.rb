@@ -54,7 +54,8 @@ def run(songs)
     list
   elsif input == "play"
     play(songs)
-  elsif
+  elsif input == "exit"
+    exit
     
   
   end
